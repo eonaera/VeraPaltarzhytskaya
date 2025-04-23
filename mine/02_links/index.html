@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+    </head>
+    <body>
+        <h1>index</h1>
+        <!--absolute - когда нужен переход на другой ресурс-->
+        <h3>absolute links</h3>
+        <!--открывается в новой странице-->
+        <a href="https://www.onliner.by" target="_blank">onliner</a> <br>
+        <!--открывается в текущей странице-->
+        <a href="https://av.by">av.by</a> <br>
+
+        <!--relative-->
+        <hr> <!--полоса разделительная-->
+        <h3>relative links неправильные варианты, потому что ссылки гвоздями</h3>
+        <a href="http://127.0.0.1:5500/mine/02_links/catalog.html">catalog</a> <br>
+        <a href="http://127.0.0.1:5500/mine/02_links/news/news.html">news</a> <br>
+        <a href="http://127.0.0.1:5500/mine/02_links/contacts/contact.html">contact</a>
+        
+        <hr> <!--полоса разделительная-->
+        <h3>relative links правильная реализация</h3>
+        <!--если 2 файла находятся рядом в одной папке, то просто название файла-->
+        <a href="catalog.html">catalog</a> <br>
+        <!--если файл находится в папке с файлов старта, то путь-->
+        <a href="contacts/contact.html">contact</a> <br>
+        <a href="contacts/contact.html#bottom">contact bottom</a> <br>
+        <!--если файл находится в папке выше по иерархии относительно файла старта, то путь-->
+        <a href="news/news.html">news</a> <br>
+
+        <hr>
+        <a href="mailto: eonaera@gmail.com">Написать нам!</a> <br>
+        <a href="tel: 375297022029">Позвонить нам!</a>
+    </body>
+</html>

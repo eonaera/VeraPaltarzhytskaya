@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--почему нет? зачем?-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Table</title>
+</head>
+<body>
+    <!--такой заголовок никак не связан с самой таблицей-->
+    <h1>Hello table</h1>
+    <table width="100%" border="1">
+        <caption>Hello table correct</caption>
+        <!--объявление строки-->
+        <tr>
+            <!--заглавная строка: центрирование. жирный-->
+            <!--семантически правильный тег - это хорошо для продвижения, соответствует требованиям поисковых систем-->
+            <th>text main 1</th>
+            <th>text main 2</th>
+            <th>text main 3</th>
+            <th>text main 4</th>
+            <th>text main 5</th>
+        </tr>
+        <tr>
+            <!--обычная строка-->
+            <td align="center"><strong>text</strong></td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+    </table>
+    <h1></h1>
+    <table width="100%" border="1">
+        <caption>Формирование таблицы</caption>
+        <tr>
+            <!--colspan - объединение по горизонтали (номинально, потому что растягивание с выдавливанием других ячеек)-->
+            <th colspan="3">text main 1</th>
+        </tr>
+        <tr>
+            <td>text</td>
+            <!--colspan - по вертикали-->
+            <td rowspan="2">text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td colspan="3">text</td>
+        </tr>
+    </table>
+    <h1></h1>
+    <table width="100%" border="1">
+        <caption>Примитивные стили</caption>
+        <!--tr*3>td*3 and enter = формирует таблицу по заданным условиям-->
+        <!--красит всю колонку-->
+        <col style="background-color: aqua;"></col><col style="background-color: rgb(66, 187, 157);"></col>
+        <tr>
+            <td style="background-color: aqua;">text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td height="50">text</td>
+            <td align="center" valign="center">text</td>
+            <td>text</td>
+        </tr>
+        <tr>
+            <td>text</td>
+            <td>text</td>
+            <td>text</td>
+        </tr>
+    </table>
+</body>
+</html>
