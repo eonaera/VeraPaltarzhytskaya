@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>form</title>
+    </head>
+    <body>
+        <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
+            "Your name: " <input type="text" name="IM"><br>
+            "Your password: " <input type="password" name="PAROL"><br>
+            "Remember me: " <input type="checkbox" name="FOREVER" checked><br>
+            <input type="submit" value="Login">
+        </form>
+        <hr>
+        <form action="http://fe.it-academy.by/TestForm.php" method="post" target="_blank" enctype="multipart/form-data">
+            <fieldset>
+                <legend>v1</legend>
+                <input type="text">
+            </fieldset>
+            <fieldset>
+                <legend>v2 with label</legend>
+                <label>your name
+                    <input type="text">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>v2 with label</legend>
+                <label for="inputv3">your name</label>
+                <input type="text">
+            </fieldset>
+            <fieldset>
+                <legend>checkbox</legend>
+                <input type="checkbox" name="check1">
+                <input type="checkbox" name="check2">
+                <input type="checkbox" name="check3">
+            </fieldset>
+            <fieldset>
+                <legend>checkbox list</legend>
+                <input type="checkbox" name="check[]" value="check1">
+                <input type="checkbox" name="check[]" value="check2" autofocus>
+                <input type="checkbox" name="check[]" value="check3">
+            </fieldset>
+            <fieldset>
+                <legend>radio</legend>
+                <input type="radio" name="radio1" value="radiov1">
+                <input type="radio" name="radio1" value="radiov2">
+                <input type="radio" name="radio1" value="radiov3"><br>
+                <input type="radio" name="radio2" value="radiov1">
+                <input type="radio" name="radio2" value="radiov2">
+                <input type="radio" name="radio2" value="radiov3">
+            </fieldset>
+            <fieldset>
+                <legend>email / url / date / time / number / range</legend>
+                <input type="email" name="email" placeholder="электронный адрес"><br>
+                <input type="url" name="url" placeholder="ссылка"><br>
+                <input type="date" name="date" placeholder="дата"><br>
+                <input type="time" name="time" placeholder="время"><br>
+                <input type="number" name="number" placeholder="число" min="0" max="100" step="10"><br>
+                <input type="range" name="range" placeholder="рэндж" min="0" max="100"><br>
+            </fieldset>
+            <fieldset>
+                <legend>file</legend>
+                <p>для файлов нужен дописать в форму enctype="multipart/form-data"</p>
+                <input type="file" name="file">
+            </fieldset>
+            <fieldset>
+                <legend>textarea</legend>
+                <textarea name="text" id="idtext" cols="40" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>select</legend>
+                <select name="select1">
+                    <optgroup label="group 1">
+                        <option value="sel11">sel 1</option>
+                        <option value="sel12">sel 2</option>
+                        <option value="sel13">sel 3</option>
+                    </optgroup>
+                    <optgroup label="group 2">
+                        <option value="sel14">sel 1</option>
+                        <option value="sel15">sel 2</option>
+                    </optgroup>
+                </select>
+                <select name="select2" size="3">
+                    <option value="sel21">sel 1</option>
+                    <option value="sel22">sel 2</option>
+                    <option value="sel23">sel 3</option>
+                    <option value="sel24">sel 4</option>
+                    <option value="sel25">sel 5</option>
+                </select>
+                <select name="select3" size="3" multiple>
+                    <option value="sel31">sel 1</option>
+                    <option value="sel32">sel 2</option>
+                    <option value="sel33">sel 3</option>
+                    <option value="sel34">sel 4</option>
+                    <option value="sel35">sel 5</option>
+                </select>
+            </fieldset>
+            <input type="submit" id="inputv3">
+            <input type="reset" id="resetv3">
+            <input type="button" id="buttonv3" value="просто кнопка">
+            <!--type = button / reset / submit-->
+            <button type='submit'><b>Send</b><img src="button_send.svg"></button>
+        </form>
+    </body>
+</html>

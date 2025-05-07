@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>forms</title>
+    </head>
+    <body>
+        <h><small>2025-04-30 practise</small></h><br>
+        <h><a href="pics.html"><small>Открыть картинки</small></a></h>
+        <hr>
+        <h1>Форма заявки на работу в зоопарке</h1>
+        <p><cite>Пожалуйста, заполните форму. Обязательные поля помечены <span style="color:red">*</span></cite></p>
+        <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <table>
+                    <tr>
+                        <td width="40%"><label for="firstName">Имя<span style="color:red">*</span></label>
+                        <td><input type="text" name="name" id="firstName" required></td>
+                    </tr>
+                    <tr>
+                        <td width="40%"><label for="phone">Телефон</label></td>
+                        <td><input type="number" name="phone" id="phone"></td>
+                    </tr>
+                    <tr>
+                        <td width="40%"><label for="emailinput">Email<span style="color:red">*</span></label>
+                        <td><input type="email" name="email" id="emailinput" required></td>
+                        
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Персональная информация</legend>
+                <table>
+                    <tr>
+                        <td width="40%"><label for="age">Возраст<span style="color:red">*</span></label>
+                        <td><input type="number" id="age" required min="0" max="120"></td>
+                    </tr>
+                    <tr>
+                        <td width="40%"><label for="gender">Пол</label></td>
+                        <td><select name="gender" id="gender">
+                            <option value="f">Женский</option>
+                            <option value="m">Мужской</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td width="40%"><label for="emailinput">Перечислите личные качества</label>
+                        <td><textarea id="personalqual"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Выберите Ваших любимых животных</legend>
+                <table>
+                    <tr">
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="zebra">Зебра</label></td>
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="cat">Кошак</label></td>
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="anaconda">Анаконда</label></td>
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="human">Человек</label></td>
+                    </tr>
+                    <tr>
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="elephant">Слон</label></td>
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="antilopa">Антилопа</label></td>
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="pigeon">Голубь</label></td>
+                        <td width="25%"><label><input type="checkbox" name="favoritepets[]" value="crab">Краб</label></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <input type="submit" id="submitinput" value="Отправить информацию">
+        </form>
+    </body>
+</html>
