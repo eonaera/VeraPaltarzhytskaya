@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        <style>
+            #test{
+                color: green;
+            }
+            p{
+                color: blue;
+            }
+            .vip{
+                color: orange;
+            }
+            .supervip{
+                color: rosybrown;
+            }
+            
+            <!--пробле и его отсутствие имеют значение-->
+            ul.a li{
+                color: aquamarine;
+            }
+            ul.b li{
+                color: darkcyan;
+            }
+        </style>
+    </head>
+    <body>
+        <p><a href="../home/main.html"><small>*В перечень домашек</small></a> | <a href="../practice/main.html"><small>*В перечень практик</small></a></p>
+        <hr>
+        <h1>01_CSS. Определение стилей</h1>
+        <div>
+            <h1 style="text-align: center; color: red" title="textalign">text-align: center / right / left - выравнивание</h1>
+            <h1 style="justify-content: right;">justify-content: right;</h1>
+
+            <p class="vip" id="test">В консоли user agent stylesheet - это примененные браузером стили по дефолту. <br>
+                p = селектор по тегу. приоритет 1<br>
+                .class = селектор по классу. приоритет 10<br>
+                класс ниже в стилях - более приоритетный 100<br>
+                #id = cселектор по тегу приоритет 1000
+            </p>
+            <p class="vip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolores asperiores officiis quod, unde pariatur obcaecati. Rerum eligendi pariatur doloremque quo ex voluptas quam! Accusamus reprehenderit praesentium nemo perspiciatis hic?</p>
+            <p class="supervip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolores asperiores officiis quod, unde pariatur obcaecati. Rerum eligendi pariatur doloremque quo ex voluptas quam! Accusamus reprehenderit praesentium nemo perspiciatis hic?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolores asperiores officiis quod, unde pariatur obcaecati. Rerum eligendi pariatur doloremque quo ex voluptas quam! Accusamus reprehenderit praesentium nemo perspiciatis hic?</p>
+        </div>
+        <hr>
+        <h2>Комбинированные стили</h2>
+        <ul class="a">
+            <li>test1</li>
+            <li>test2</li>
+            <li>test3</li>
+        </ul>
+        <ul class="b">
+            <li>test1</li>
+            <li>test2</li>
+            <li>test3</li>
+        </ul>
+
+    </body>
+</html>

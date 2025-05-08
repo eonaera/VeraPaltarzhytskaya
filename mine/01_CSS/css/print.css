@@ -1,0 +1,12 @@
+h1{
+    text-align: right;
+    color: blue;
+    font-style: italic;
+}
+ul.a li{
+    color: aquamarine;
+}
+
+ul.b li{
+    color: darkcyan;
+}

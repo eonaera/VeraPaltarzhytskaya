@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        <style>
+            .header{
+                background-color: #d9ead3;
+                height: 50px;
+            }
+            .menu{
+                background-color: #ffe599;
+                float: left;
+                width: 200px;
+                height: 300px;
+            }
+            .content{
+                background-color: #c9daf8;
+                height: 300px;
+            }
+            .banner{
+                background-color: #ead1dc;
+                float: right;
+                width: 200px;
+                height: 300px;
+            }
+            .footer{
+                background-color: #6d9eeb;
+                height: 50px;
+            }
+            .wrap{
+                background-color:aqua;
+            }
+            .clear{
+                clear: both;
+            }
+            .field{
+                background-color: #ffe599;
+                width: 50px;
+                height: 25px;
+                float: left;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>full</p>
+        <img src="pics/emoji2.png" alt="emoji" width="50">
+        <hr>
+        <p>спрайт</p>
+        <div style="background-image: url(pics/emoji2.png); background-repeat: no-repeat;
+            background-position: 0px 0px; width: 128px; height: 128px;">
+        </div>
+        <div style="background-image: url(pics/emoji2.png); background-repeat: no-repeat;
+            background-position: 0px -128px; width: 128px; height: 128px;">
+        </div>
+        <div style="background-image: url(pics/emoji2.png); background-repeat: no-repeat;
+            background-position: 0px -256px; width: 128px; height: 128px;">
+        </div>
+        <hr>
+        <p>макет</p>
+        <div class="header">
+            <div class="field">field 1</div>
+            <div class="field">field 2</div>
+            <div class="field">field 3</div>
+            <div class="field">field 4</div>
+        </div>
+        <div class="wrap">
+            <div class="menu">menu</div>
+            <div class="banner">banner</div>
+            <div class="content">
+                <div class="field"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <div class="footer">footer</div>
+    </body>
+</html>
