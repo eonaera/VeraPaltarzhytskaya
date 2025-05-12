@@ -1,0 +1,2 @@
+@import "../03_ImportLinkTag/css/mystyle_for_screen.css" screen;
+@import "../03_ImportLinkTag/css/mystyle_for_print.css" print;
