@@ -2,12 +2,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>02_CSS_base</title>
+        <title>02_CSS_base1</title>
+        <style>
+            .card{
+                background-image: url(cards.png);
+                background-repeat: no-repeat;
+                width: 138px;
+                height: 188px;
+                border-radius: 17px;
+                border: 1px solid gray;
+                position: absolute;
+            }
+            .card-container {
+                position: relative;
+                height: 350px;
+            }
+        </style>
     </head>
     <body>
-        <p><small><a href="../main.html">*В перечень домашек</a> | <a href="../../practice/main.html">*В перечень практик</a></small></p><hr>
-        <div>
-            <p>Дедлайн: 2025-05-10</p>
+        <p><small><a href="../../main.html">*В перечень домашек</a> | <a href="../../../practice/main.html">*В перечень практик</a> | 
+            <a href="../base2/base2.html">Базовое #2</a> | <a href="../base3/base3.html">Базовое #3</a> | 
+            <a href="../add1/add1.html">Дополнительное #1</a> | <a href="../add2/add2.html">Дополнительное #1</a></small></p><hr>
+        <h1>Домашнее задание - базовое #1</h1>
+        <div class="card-container">
+            <div class="card" id="jackhearts" style="background-position: -433px -1593px; top: 0px; left: 0px; z-index: 1;"></div>
+            <div class="card" id="queenspades" style="background-position: 0px -1792px; top: 40px; left: 40px; z-index: 2;"></div>
+            <div class="card" id="ninediamonds" style="background-position: -288px -1394px; top: 80px; left: 80px; z-index: 3;"></div>
+            <div class="card" id="aceclubs" style="background-position: -145px -2190px; top: 120px; left: 120px; z-index: 4;"></div>
+            <div class="card" id="joker" style="background-position: -288px -2389px; top: 160px; left: 160px; z-index: 5;"></div>
         </div>
     </body>
 </html>
