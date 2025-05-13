@@ -1,0 +1,37 @@
+#base3hometask {
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    display: flex;
+    align-items: flex-start;
+}
+#navigation {
+    width: 15em;
+    background-color: #4CAF50;
+    padding: 1em;
+    flex-shrink: 0;
+}
+.articles-wrapper {
+    flex-grow: 1px;
+}
+.article {
+    background-color: #478ea0;
+    padding: 1em;
+    margin-bottom: 0.2em;
+    position: relative;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 0.1em;
+}
+#article2 {
+    padding-bottom: 120px;
+}
+#article2 img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}

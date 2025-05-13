@@ -1,83 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>02_CSS_base2</title>
-        <style>
-            .header{
-                background-color: #d9ead3;
-                height: 50px;
-            }
-            .menu{
-                background-color: #ffe599;
-                float: left;
-                width: 200px;
-                height: 300px;
-            }
-            .content{
-                background-color: #c9daf8;
-                height: 300px;
-            }
-            .banner{
-                background-color: #ead1dc;
-                float: right;
-                width: 200px;
-                height: 300px;
-            }
-            .footer{
-                background-color: #6d9eeb;
-                height: 50px;
-            }
-            .wrap{
-                background-color:aqua;
-            }
-            .clear{
-                clear: both;
-            }
-            .field{
-                background-color: #ffe599;
-                width: 50px;
-                height: 25px;
-                float: left;
-                padding: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <p><small><a href="../../main.html">*В перечень домашек</a> | <a href="../../../practice/main.html">*В перечень практик</a> | 
-            <a href="../base1/base1.html">Базовое #1</a> | <a href="../base2/base2.html">Базовое #2</a> | 
-            <a href="../add1/add1.html">Дополнительное #1</a> | <a href="../add2/add2.html">Дополнительное #1</a></small></p><hr>
-        <h1>Домашнее задание - базовое #3</h1>
-        <p>full</p>
-        <img src="pics/emoji2.png" alt="emoji" width="50">
-        <hr>
-        <p>спрайт</p>
-        <div style="background-image: url(pics/emoji2.png); background-repeat: no-repeat;
-            background-position: 0px 0px; width: 128px; height: 128px;">
-        </div>
-        <div style="background-image: url(pics/emoji2.png); background-repeat: no-repeat;
-            background-position: 0px -128px; width: 128px; height: 128px;">
-        </div>
-        <div style="background-image: url(pics/emoji2.png); background-repeat: no-repeat;
-            background-position: 0px -256px; width: 128px; height: 128px;">
-        </div>
-        <hr>
-        <p>макет</p>
-        <div class="header">
-            <div class="field">field 1</div>
-            <div class="field">field 2</div>
-            <div class="field">field 3</div>
-            <div class="field">field 4</div>
-        </div>
-        <div class="wrap">
-            <div class="menu">menu</div>
-            <div class="banner">banner</div>
-            <div class="content">
-                <div class="field"></div>
+<head>
+    <meta charset="UTF-8">
+    <title>02_CSS_base3</title>
+    <link rel="stylesheet" href="style.css" media="screen"/>
+    <link rel="stylesheet" href="style.css" media="print"/>
+</head>
+<body>
+    <p><small><a href="../../main.html">*В перечень домашек</a> | <a href="../../../practice/main.html">*В перечень
+                практик</a> |
+            <a href="../base1/base1.html">Базовое #1</a> | <a href="../base2/base2.html">Базовое #2</a> |
+            <a href="../add1/add1.html">Дополнительное #1</a> | <a href="../add2/add2.html">Дополнительное
+                #1</a></small></p>
+    <hr>
+    <h1>Домашнее задание - базовое #3</h1>
+    <div id="base3hometask">
+        <div class="main-content">
+            <div id="navigation">
+                <h2>Блок навигации</h2>
+                <ul>
+                    <li>Ширина 15em</li>
+                    <li>Должен присутствовать цвет фона</li>
+                    <li>Располагается слева</li>
+                    <li>Блок навигации наполните контентом достаточным, чтобы по высоте он начинал захватывать вторую
+                        статью, как показано в данном примере</li>
+                </ul>
             </div>
-            <div class="clear"></div>
+            <div class="articles-wrapper">
+                <div class="article">
+                    <h2>Статья 1</h2>
+                    <p>Размер блока:<br>Занимает всю доступную ширину<br>Должен присутствовать цвет фона<br>Во всех "статьях"
+                        сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-buttom</p>
+                </div>
+                <div id="article2" class="article">
+                    <div class="text-content">
+                        <h2>Статья 2</h2>
+                        <p>Размер блока:<br>Занимает всю доступную ширину<br>Должен присутствовать цвет фона<br>Во всех "статьях"
+                            сделайте отступ снизу от соседей равным .2em, при помощи свойства margin-buttom. Картинка вставлена при
+                            помощи тега, плавание организовано по правому краю внутри данной статьи для этой картитнки.</p>
+                    </div>
+                        <img src="pics/email.png" alt="Email">
+                </div>
+            </div>
         </div>
-
-        <div class="footer">footer</div>
-    </body>
+        <div id="footer">
+            <p>Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.</p>
+        </div>
+    </div>
+</body>
 </html>
