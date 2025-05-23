@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Index</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body{
+                height: 10000px;
+            }
+            .header, .footer{
+                height: 50px;
+                background-color: blue;
+            }
+            .content-wrap{
+                background-color:yellow;
+            }
+            .menu{
+                width: 200px;
+                background-color: red;
+                height: 100px;
+                float: left;
+            }
+            .banner{
+                width: 200px;
+                background-color: green;
+                height: 100px;
+                float: right;
+            }
+            @media all and (max-width: 800px){
+                .header{
+                    background-color: red;
+                }
+                .content-wrap{
+                    background-color:aqua;
+                }
+                .menu{
+                    background-color: gold;
+                    float: right;
+                }
+                .banner{
+                    background-color: greenyellow;
+                    float: left;
+                }
+            }
+            @media all and (max-width: 460px){
+                .header{
+                    background-color: red;
+                }
+                .content-wrap{
+                    background-color:aqua;
+                }
+                .menu{
+                    background-color: gray;
+                    float: right;
+                }
+                .banner{
+                    background-color: goldenrod;
+                    float: left;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">header</div>
+        <div class="content-wrap">
+            <div class="menu">menu</div>
+            <div class="banner">banner</div>
+            <div class="content">content</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="footer">footer</div>
+    </body>
+</html>

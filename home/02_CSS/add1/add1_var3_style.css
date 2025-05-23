@@ -1,0 +1,60 @@
+.frame {
+    display: inline-block;
+}
+
+.top, .middle, .bottom {
+    display: flex;
+}
+
+.top-left, .top-right,
+.bottom-left, .bottom-right {
+    width: 90px;
+    height: 80px;
+}
+
+.top-left {
+    background-image: url('mypics/t-l.png');
+}
+
+.top-center {
+    flex: 1;
+    background: url('mypics/t.png') repeat-x;
+}
+
+.top-right {
+    width: 80px;
+    background-image: url('mypics/t-r.png');
+}
+
+.middle-left {
+    width: 90px;
+    background: url('mypics/l.png') repeat-y;
+}
+
+.middle-center {
+    background: #fff;
+    padding: 1em;
+    flex: 1;
+}
+
+.middle-right {
+    width: 80px;
+    background: url('mypics/r.png') repeat-y;
+}
+
+.bottom-left {
+    height: 85px;
+    background-image: url('mypics/b-l.png');
+}
+
+.bottom-center {
+    flex: 1;
+    background: url('mypics/b.png') repeat-x;
+    height: 85px;
+}
+
+.bottom-right {
+    width: 80px;
+    height: 85px;
+    background-image: url('mypics/b-r.png');
+}

@@ -1,0 +1,54 @@
+#base3hometask {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.main-content {
+    display: flex;
+}
+
+#navigation {
+    width: 15em;
+    background-color: #d0e4f5;
+    padding: 1em;
+    align-self: flex-start;
+}
+
+.articles-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}
+
+.article {
+    background-color: #e2f0cb;
+    padding: 1em;
+    margin-bottom: 0.2em;
+}
+
+#article2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+#article2 .text-content {
+    flex: 1;
+}
+
+#article2 img {
+    max-width: 150px;
+    height: auto;
+}
+
+#footer {
+    background-color: #ccc;
+    padding: 1em;
+}
+
+ul {
+    padding-left: 1.2em;
+}

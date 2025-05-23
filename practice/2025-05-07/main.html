@@ -35,11 +35,28 @@
                 clear: both;
             }
             .field{
-                background-color: #ffe599;
+                background-color: #8b6902;
                 width: 50px;
                 height: 25px;
                 float: left;
                 padding: 10px;
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+            @media all and (max-width: 600px) {
+                .menu{
+                    background-color: #ffe599;
+                    width: 100%;
+                    height: 300px;
+                    float: none;
+                }
+                .banner{
+                    display: none;
+                }
+                .content{
+                    background-color: #c9daf8;
+                    height: 300px;
+                }
             }
         </style>
     </head>
@@ -59,16 +76,12 @@
         </div>
         <hr>
         <p>макет</p>
-        <div class="header">
-            <div class="field">field 1</div>
-            <div class="field">field 2</div>
-            <div class="field">field 3</div>
-            <div class="field">field 4</div>
-        </div>
+        <div class="header">header</div>
         <div class="wrap">
             <div class="menu">menu</div>
             <div class="banner">banner</div>
             <div class="content">
+                <div class="field"></div>
                 <div class="field"></div>
             </div>
             <div class="clear"></div>

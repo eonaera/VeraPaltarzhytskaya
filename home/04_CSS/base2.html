@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>04_CSS_base2</title>
+        <style>
+            table{
+                border-collapse: collapse;
+                overflow: auto;
+            }
+            table tr th{
+                background-color: gray;
+                border: 2px solid white;
+            }
+            table tr td{
+                border: 2px dotted gray;
+                border-collapse: collapse ;
+            }
+            table tr:nth-child(even) {
+                background-color: white;
+            }
+
+            table tr:nth-child(odd) {
+                background-color: pink;
+            }
+            table tr:hover {
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <p><small><a href="../main.html">*В перечень домашек</a> | <a href="../../../practice/main.html">*В перечень практик</a></small></p><hr>
+        <div>
+            <h1>Домашнее задание - базовое #2</h1>
+            <table>
+                <caption style="caption-side: bottom;">ДАННЫЕ О СОТРУДНИКАХ</caption>
+                <tr>
+                    <th>ФИО</th>
+                    <th>пол</th>
+                    <th>должность</th>
+                    <th>дата рож.</th>
+                    <th>Данные 01</th>
+                    <th>Данные 02</th>
+                </tr>
+                <tr>
+                    <td>Иванов Иван Иванович</td>
+                    <td>М</td>
+                    <td>начальник</td>
+                    <td>01.01.1960</td>
+                    <td>4567</td>
+                    <td>3453</td>
+                </tr>
+                <tr>
+                    <td>Петрова Илонна Петровна</td>
+                    <td>Ж</td>
+                    <td>секретарь</td>
+                    <td>01.01.1989</td>
+                    <td>98795</td>
+                    <td>46523</td>
+                </tr>
+                <tr>
+                    <td>Сидоров Илья Игоревич</td>
+                    <td>М</td>
+                    <td>бухгалтер</td>
+                    <td>01.01.1979</td>
+                    <td>987979</td>
+                    <td>743434</td>
+                </tr>
+                <tr>
+                    <td>Пупин Фёдор Фёдорович</td>
+                    <td>М</td>
+                    <td>водитель</td>
+                    <td>01.01.1963</td>
+                    <td>74323434</td>
+                    <td>7232379</td>
+                </tr>
+                <tr>
+                    <td>Пупин Фёдор Фёдорович</td>
+                    <td>М</td>
+                    <td>водитель 2</td>
+                    <td>01.01.1983</td>
+                    <td>3234534</td>
+                    <td>923123379</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

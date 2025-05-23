@@ -17,7 +17,7 @@
                 color: rosybrown;
             }
             
-            <!--пробле и его отсутствие имеют значение-->
+            <!--пробел и его отсутствие имеют значение-->
             ul.a li{
                 color: aquamarine;
             }
@@ -37,10 +37,12 @@
             <p class="vip" id="test">В консоли user agent stylesheet - это примененные браузером стили по дефолту. <br>
                 p = селектор по тегу. приоритет 1<br>
                 .class = селектор по классу. приоритет 10<br>
-                класс ниже в стилях - более приоритетный 100<br>
-                #id = cселектор по тегу приоритет 1000
+                #id = селектор по id. приоритет 100<br>
+                класс ниже в стилях - более приоритетный<br>
+                inline = инлайновый cселектор. приоритет 1000<br>
+                приоритеты суммируются
             </p>
-            <p class="vip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolores asperiores officiis quod, unde pariatur obcaecati. Rerum eligendi pariatur doloremque quo ex voluptas quam! Accusamus reprehenderit praesentium nemo perspiciatis hic?</p>
+            <p class="vip">Классы перечисляются через пробел class="a b c" - это 3 класса</p>
             <p class="supervip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolores asperiores officiis quod, unde pariatur obcaecati. Rerum eligendi pariatur doloremque quo ex voluptas quam! Accusamus reprehenderit praesentium nemo perspiciatis hic?</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolores asperiores officiis quod, unde pariatur obcaecati. Rerum eligendi pariatur doloremque quo ex voluptas quam! Accusamus reprehenderit praesentium nemo perspiciatis hic?</p>
         </div>

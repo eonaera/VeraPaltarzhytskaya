@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>03_CSS_add</title>
-    </head>
-    <body>
-        <p><small><a href="../main.html">*В перечень домашек</a> | <a href="../../practice/main.html">*В перечень практик</a></small></p><hr>
-        <div>
+<head>
+<meta charset="UTF-8" />
+<title>03_CSS_add</title>
+<style>
+    .BaseItem {
+        background-color: lightgray;
+        border: 1px solid darkgrey;
+        border-radius: 0.5em;
+        padding: 0.2em 0.2em;
+        cursor: pointer;
+    }
+    .MenuLevel1 {
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+    }
+    .MenuLevel1 > div {
+        position: relative;
+        transition: background-color 0.3s ease;
+    }
+    .MenuLevel1 > div:hover {
+        background-color: gray;
+    }
+    .MenuLevel2 {
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 0;
+        min-width: 140px;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(40px) scale(0.8);
+        transition: 
+            opacity 0.8s ease 0.1s, 
+            transform 0.8s ease 0.1s;
+    }
+    .MenuLevel1 > div:hover .MenuLevel2 {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0) scale(1);
+    }
+
+    @media (min-width: 850px) {
+        .MenuLevel1 {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    @media (max-width: 849px) {
+        .MenuLevel2 {
+            top: 0;
+            left: 100%;
+            transform: translateX(40px) scale(0.8);
+            transition:
+                opacity 0.8s ease 0.1s,
+                transform 0.8s ease 0.1s;
+        }
+        .MenuLevel1 > div:hover .MenuLevel2 {
+            transform: translateX(0) scale(1);
+        }
+    }
+</style>
+</head>
+<body>
+<p><small><a href="../main.html">*В перечень домашек</a> | <a href="../../practice/main.html">*В перечень практик</a></small></p>
+<hr />
+<h1>Домашнее задание - дополнительное</h1>
+<div class='MenuLevel1'>
+    <div class="BaseItem">Понедельник
+        <div class='MenuLevel2'>
+            <div class="BaseItem">Завтрак</div>
+            <div class="BaseItem">Обед</div>
+            <div class="BaseItem">Ужин</div>
         </div>
-    </body>
+    </div>
+    <div class="BaseItem">Вторник
+        <div class='MenuLevel2'>
+            <div class="BaseItem">Завтрак</div>
+            <div class="BaseItem">Обед</div>
+            <div class="BaseItem">Ужин</div>
+        </div>
+    </div>
+    <div class="BaseItem">Среда
+        <div class='MenuLevel2'>
+            <div class="BaseItem">Завтрак</div>
+            <div class="BaseItem">Обед</div>
+            <div class="BaseItem">Ужин</div>
+        </div>
+    </div>
+    <div class="BaseItem">Четверг
+        <div class='MenuLevel2'>
+            <div class="BaseItem">Завтрак</div>
+            <div class="BaseItem">Обед</div>
+            <div class="BaseItem">Ужин</div>
+        </div>
+    </div>
+    <div class="BaseItem">Пятница
+        <div class='MenuLevel2'>
+            <div class="BaseItem">Завтрак</div>
+            <div class="BaseItem">Обед</div>
+            <div class="BaseItem">Ужин</div>
+        </div>
+    </div>
+    <div class="BaseItem">Суббота
+        <div class='MenuLevel2'>
+            <div class="BaseItem">Завтрак</div>
+            <div class="BaseItem">Обед</div>
+            <div class="BaseItem">Ужин</div>
+        </div>
+    </div>
+    <div class="BaseItem">Воскресенье
+        <div class='MenuLevel2'>
+            <div class="BaseItem">Завтрак</div>
+            <div class="BaseItem">Обед</div>
+            <div class="BaseItem">Ужин</div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

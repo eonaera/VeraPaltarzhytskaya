@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>2025-05-14_3</title>
+        <!--адаптив с помощью фреймворка https://materializecss.com/grid.html-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+        <style>
+            .center-stage {
+                position: relative;
+                width: 100%;
+                max-width: 400px;
+                aspect-ratio: 1;
+                margin: 50px auto;
+            }
+
+            .symbol {
+                position: absolute;
+                max-width: 50%;
+                transition: transform 0.3s ease;
+            }
+
+            .symbol:hover {
+                transform: scale(1.1);
+                z-index: 10;
+            }
+
+            .b {
+                top: 0;
+                left: 0;
+            }
+
+            .mw {
+                top: 0;
+                right: 0;
+            }
+
+            .yy {
+                bottom: 0;
+                left: 25%;
+            }
+
+            .ns {
+                top: 15%;
+                left: 15%;
+                max-width: 70%;
+                z-index: 5;
+            }
+
+            @media (max-width: 600px) {
+                .symbol {
+                    max-width: 50%;
+                }
+                .ns {
+                    max-width: 80%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row">
+            <p><small><a href="../../../home/main.html">*В перечень домашек</a> | <a href="../../../practice/main.html">*В перечень практик</a></small></p><hr>
+            <h1>Практика 1</h1>
+        </div>
+        <div class="container center-align">
+            <div class="center-stage">
+            <img src="pics/biohazard.png" alt="Biohazard" class="symbol b">
+            <img src="pics/Man-and-woman.png" alt="Man & Woman" class="symbol mw">
+            <img src="pics/Yin_and_Yang.png" alt="Yin & Yang" class="symbol yy">
+            <img src="pics/No_smoking.png" alt="No Smoking" class="symbol ns">
+        </div>
+        </div>
+    </body>
+</html>

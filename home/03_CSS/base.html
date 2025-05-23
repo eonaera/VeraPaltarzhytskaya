@@ -3,10 +3,106 @@
     <head>
         <meta charset="UTF-8">
         <title>03_CSS_base</title>
+        <style>
+            .BaseItem {
+                background-color: lightgray;
+                border: 1px solid darkgrey;
+                border-radius: 0.5em;
+                padding: 0.5em 0.5em;
+            }
+            .MenuLevel1 {
+                display: flex;
+                flex-direction: column;
+                width: max-content;
+            }
+            .MenuLevel1 > div {
+                position: relative;
+                cursor: pointer;
+            }
+            .MenuLevel2 {
+                display: none;
+                position: absolute;
+                z-index: 1;
+            }
+            .MenuLevel1 > div:hover {
+                background-color: gray;
+            }
+            .MenuLevel1 > div:hover .MenuLevel2 {
+                display: block;
+                left: 100%;
+                top: 0;
+            }
+            @media (min-width: 850px) {
+                .MenuLevel1 {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+
+                .MenuLevel1 > div {
+                    margin: 0;
+                }
+
+                .MenuLevel1 > div:hover .MenuLevel2 {
+                    top: 100%;
+                    left: 0;
+                }
+            }
+        </style>
     </head>
     <body>
         <p><small><a href="../main.html">*В перечень домашек</a> | <a href="../../practice/main.html">*В перечень практик</a></small></p><hr>
-        <div>
+        <h1>Домашнее задание - базовое</h1>
+        <div class='MenuLevel1'>
+            <div class="BaseItem">Понедельник
+                <div class='MenuLevel2'>
+                    <div class="BaseItem">Завтрак</div>
+                    <div class="BaseItem">Обед</div>
+                    <div class="BaseItem">Ужин</div>
+                </div>
+            </div>
+            <div class="BaseItem">Вторник
+                <div class='MenuLevel2'>
+                    <div class="BaseItem">Завтрак</div>
+                    <div class="BaseItem">Обед</div>
+                    <div class="BaseItem">Ужин</div>
+                </div>
+            </div>
+            <div class="BaseItem">Среда
+                <div class='MenuLevel2'>
+                    <div class="BaseItem">Завтрак</div>
+                    <div class="BaseItem">Обед</div>
+                    <div class="BaseItem">Ужин</div>
+                </div>
+            </div>
+            <div class="BaseItem">Четверг
+                <div class='MenuLevel2'>
+                    <div class="BaseItem">Завтрак</div>
+                    <div class="BaseItem">Обед</div>
+                    <div class="BaseItem">Ужин</div>
+                </div>
+            </div>
+            <div class="BaseItem">Пятница
+                <div class='MenuLevel2'>
+                    <div class="BaseItem">Завтрак</div>
+                    <div class="BaseItem">Обед</div>
+                    <div class="BaseItem">Ужин</div>
+                </div>
+            </div>
+            <div class="BaseItem">Суббота
+                <div class='MenuLevel2'>
+                    <div class="BaseItem">Завтрак</div>
+                    <div class="BaseItem">Обед</div>
+                    <div class="BaseItem">Ужин</div>
+                </div>
+            </div>
+            <div class="BaseItem">Воскресенье
+                <div class='MenuLevel2'>
+                    <div class="BaseItem">Завтрак</div>
+                    <div class="BaseItem">Обед</div>
+                    <div class="BaseItem">Ужин</div>
+                </div>
+            </div>
+
         </div>
     </body>
 </html>
