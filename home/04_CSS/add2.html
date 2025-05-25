@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>04_CSS_add2</title>
+        <style>
+            body {
+                counter-reset: board 65;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            table tr td{
+                width: 60px;
+                height: 60px;
+                background-color: black;
+                border: 4px solid black;
+                text-align: center;
+                vertical-align: middle;
+                font-size: 30px;
+                counter-increment: board -1;
+                position: relative;
+
+            }
+            table td::before {
+                content: counter(board);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            table tr:nth-child(odd) td:nth-child(even),
+            table tr:nth-child(even) td:nth-child(odd) {
+                background-color: white;
+                color: black;
+            }
+            table tr:nth-child(odd) td:nth-child(odd),
+            table tr:nth-child(even) td:nth-child(even) {
+                background-color: black;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <p><small><a href="../main.html">*В перечень домашек</a> | <a href="../../../practice/main.html">*В перечень практик</a></small></p><hr>
+        <div>
+            <h1>Домашнее задание - базовое #3</h1>
+            <table>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+        </div>
+    </body>
+</html>
