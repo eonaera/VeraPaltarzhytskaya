@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>01_Jquery_add</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            input[type="password"] {
+                background-color: green;
+                padding: 5px;
+                margin-bottom: 5px;
+            }
+            .error {
+                background-color: red !important;
+            }
+        </style>
+    </head>
+    <body>
+        <p><small><a href="../main.html">*В перечень домашек</a> | <a href="../../../practice/main.html">*В перечень практик</a></small></p><hr>
+        <div>
+            <form action="http://fe.it-academy.by/TestForm.php" method="GET" target="_blank">
+                <fieldset>
+                    <input type="password" name="PAROL" id="parol1">*Пароль<br>
+                    <input type="password" name="PAROL2" id="parol2">*Повторите пароль<br>
+                    <input type="submit" value="Отправить">
+                </fieldset>
+            </form>
+        </div>
+        <script>
+            $(document).ready(function() {
+                $('#parol2').on('input', function() {
+                    const pass1 = $('#parol1').val();
+                    const pass2 = $(this).val();
+                    
+                    if (pass1 !== pass2) {
+                        $('#parol1, #parol2').addClass('error');
+                    } else {
+                        $('#parol1, #parol2').removeClass('error');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
