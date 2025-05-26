@@ -28,6 +28,16 @@
         </div>
         <script>
             $(document).ready(function() {
+                $('#parol1').on('input', function() {
+                    const pass1 = $('#parol2').val();
+                    const pass2 = $(this).val();
+                    
+                    if (pass1 !== pass2) {
+                        $('#parol1, #parol2').addClass('error');
+                    } else {
+                        $('#parol1, #parol2').removeClass('error');
+                    }
+                });
                 $('#parol2').on('input', function() {
                     const pass1 = $('#parol1').val();
                     const pass2 = $(this).val();
